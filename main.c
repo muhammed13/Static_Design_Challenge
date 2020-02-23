@@ -6,18 +6,24 @@
  ============================================================================
  */
 
-#include "car_sm.h"
+#include "APP/car_sm.h"
 #include "softwareDelay.h"
-#include "PWM.h"
-#include "Us.h"
-#include "external_interrupt.h"
-#include "DIO.h"
-#include "ICU.h"
-#include "motor.h"
-#include "Steering.h"
-#include "Timers.h"
+#include "MCAL/PWM.h"
+#include "HAL/Us.h"
+#include "MCAL/DIO.h"
+#include "MCAL/external_interrupts.h"
+#include "HAL/ICU.h"
+#include "HAL/motor.h"
+#include "APP/Steering.h"
+#include "MCAL/Timer.h"
+
+
+
+
 int main(void)
 {
+
+
 /***************************************DIO test************************************/
 
 	/*
@@ -154,6 +160,7 @@ int main(void)
 		TCNT2=value;
 	}
 */
+
 /***************************************************************************************/
 
 	/***********************steering test*****************************/
@@ -217,7 +224,7 @@ int main(void)
 
 	Car_SM_Init();
 
-	while(1)
+	while(TRUE)
 	{
 		Car_SM_Update();
 	}

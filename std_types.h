@@ -1,10 +1,3 @@
-/*
- * std_types.h
- *
- *  Created on: Oct 21, 2019
- *      Author: Sprints
- */
-
 #ifndef STD_TYPES_H_
 #define STD_TYPES_H_
 

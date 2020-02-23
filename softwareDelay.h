@@ -1,7 +1,7 @@
 #ifndef SOFTWAREDELAY_H_
 #define SOFTWAREDELAY_H_
 #include "std_types.h"
-#include "Timers.h"
+
 /**
  * Description: this delay function operate in a polling manner
  * 				don't use it with RTOSs
